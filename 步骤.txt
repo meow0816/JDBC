@@ -1,0 +1,12 @@
+1.导入数据库的驱动.jar
+1.加载驱动
+	Class.forName("驱动程序全类名	");
+2.建立连接，Connection对象
+3.创建Statement对象来执行sql
+	statement 执行SQL语句
+	boolean flag = stmt.execute(sql); --执行任何SQL，多用于执行DDL
+	ResultSet rs = stmt.executeQuery(sql); --执行DQL，多用于查询，如SELECT语句
+	int n = stmt.executeUpdate(sql); --执行DML，多用于执行INSERT、DELETE、UPDATE语句，或DDL（CREATE,ALTER,DROP）
+4.处理结果集
+5.关闭连接
+
